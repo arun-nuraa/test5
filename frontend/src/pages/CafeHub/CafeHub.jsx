@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Html5QrcodeScanner } from "html5-qrcode";
 import styles from "./styles.module.css";
-
+import { assets } from "../../assets/assets";
 const CafeHub = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [showScanner, setShowScanner] = useState(false);
@@ -79,7 +79,7 @@ const CafeHub = () => {
         <div className={styles.qrSection}>
           <button className={styles.scanBtn} onClick={startScanner}>
             <img
-              src="./src/img/scan.png"
+              src={assets.scan}
               alt="Scan"
               className={styles.scanIcon}
             />
@@ -102,7 +102,7 @@ const CafeHub = () => {
         <div className={styles.restList} onClick={() => navigate("/Home")}>
           <div className={styles.restCard}>
             <img
-              src="./src/img/teatime.png"
+              src={assets.teatime}
               alt="Tea Time"
               className={styles.restImg}
             />
