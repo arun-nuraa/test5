@@ -9,7 +9,7 @@ import LocalOrders from "./pages/LocalOrders/LocalOrders";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const App = () => {
-  const url = "http://localhost:4000";
+  const url = "https://backend-9t8q.onrender.com";
   return (
     <div>
       <ToastContainer />
